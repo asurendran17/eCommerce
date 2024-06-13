@@ -1,0 +1,125 @@
+.hero{
+    height:100vh;
+    display: flex;
+    background: linear-gradient(180deg, rgb(65, 55, 55), white);
+}
+.hero-left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left p{
+    font-size: 70px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+}
+.hero-hand-icon img{
+    height: 80px;
+    width: 80px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: black; 
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.hero-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.hero-right img{
+    height: 650px;
+}
+@media(max-width:1024px){
+    .hero-right img{
+        height: 580px;
+    }
+    .hero-left{
+        padding-left: 70px;
+    }
+}
+@media(max-width:800px){
+    .hero-right img{
+        height: 460px;
+    }
+    .hero-left{
+        padding-left: 55px;
+    }
+    .hero-left p{
+        font-size: 60px;
+        font-weight: 650;
+    }
+    .hero-latest-btn{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        gap: 15px;
+        width: 250px;
+        height: 60px;
+        border-radius: 75px;
+        margin-top: 30px;
+        background-color: black; 
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+@media(max-width:700px){
+    .hero-right img{
+        display: none;
+    }
+    .hero-left p{
+        font-size: 60px;
+        font-weight: 650;
+    }
+    .hero-hand-icon img{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media(max-width:500px){
+    .hero-right img{
+        display: none;
+    }
+    .hero-left p{
+        font-size: 50px;
+        font-weight: 650;
+    }
+    .hero-hand-icon img{
+        height: 50px;
+        width: 50px;
+    }
+    .hero-latest-btn{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        gap: 15px;
+        width: 220px;
+        height: 50px;
+        border-radius: 75px;
+        margin-top: 30px;
+        background-color: black; 
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

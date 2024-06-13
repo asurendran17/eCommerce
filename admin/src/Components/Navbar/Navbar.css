@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: azure;
+    box-shadow: 0 6px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    gap: 10px;
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 1000;
+}
+.nav-logo img{
+    height: 60px;
+}
+.nav-logo span{
+    font-size: 20px;
+    color: greenyellow;
+}
+.nav-profile{
+    padding-right:30px;
+}
+@media(max-width:500px){
+    .nav-logo{
+        font-size:35px;
+        padding-left: 5px;
+        gap: 2px;
+    }
+    .nav-logo p{
+        margin-top:10px;
+    }
+    .nav-logo span{
+        font-size: 15px;
+    }
+    .nav-profile{
+        height: 40px;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+    .nav-logo img{
+        margin-top: 7px;
+        height: 50px;
+    }
+}
