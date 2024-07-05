@@ -20,7 +20,7 @@ const LoginSignup = () => {
   const login = async ()=>{
     //console.log(formData);
     let responseData;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://ecommerce-backend-y3g3.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -40,7 +40,7 @@ const LoginSignup = () => {
   const signup = async ()=>{
     console.log(formData);
     let responseData;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://ecommerce-backend-y3g3.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
